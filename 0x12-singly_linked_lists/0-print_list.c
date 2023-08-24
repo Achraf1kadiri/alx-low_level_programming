@@ -1,26 +1,26 @@
 #include <stdio.h>
-#include "custom_lists.h"
+#include "linked_list_ops.h"
 
 /**
- * display_custom_list - displays the content of a custom linked list
- * @list: pointer to the custom_list_t list to display
+ * display_linked_elements - prints all elements of a linked list
+ * @h: pointer to the list_t list containing elements
  *
- * Return: the count of elements displayed
+ * Return: number of nodes printed
  */
-size_t display_custom_list(const custom_list_t *list)
+size_t display_linked_elements(const list_t *h)
 {
-    size_t count = 0;
+    size_t node_count = 0;
 
-    while (list)
+    while (h)
     {
-        if (!list->data)
-            printf("[0] (null)\n");
+        if (!h->str)
+            printf("[0] (nil)\n");
         else
-            printf("[%lu] %s\n", list->length, list->data);
-        list = list->next;
-        count++;
+            printf("[%u] %s\n", h->len, h->str);
+        h = h->next;
+        node_count++;
     }
 
-    return count;
+    return node_count;
 }
 
