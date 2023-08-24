@@ -1,26 +1,25 @@
 #include <stdio.h>
-#include "linked_list_ops.h"
+#include "lists.h"
 
 /**
- * display_linked_elements - prints all elements of a linked list
- * @h: pointer to the list_t list containing elements
- *
- * Return: number of nodes printed
+ * print_list - displays all elements stored in a linked list
+ * @h: pointer to the list_t structure representing the list
+ * Returns: the count of nodes that have been printed
  */
-size_t display_linked_elements(const list_t *h)
+size_t print_list(const list_t *h)
 {
-    size_t node_count = 0;
+	size_t a = 0;
 
-    while (h)
-    {
-        if (!h->str)
-            printf("[0] (nil)\n");
-        else
-            printf("[%u] %s\n", h->len, h->str);
-        h = h->next;
-        node_count++;
-    }
+	while (h)
+	{
+		if (!h->str)
+			printf("[0] (nil)\n");
+		else
+			printf("[%u] %s\n", h->len, h->str);
+		h = h->next;
+		a++;
+	}
 
-    return node_count;
+	return (a);
 }
 
