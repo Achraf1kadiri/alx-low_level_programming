@@ -9,7 +9,7 @@
  * Description: This function copies a memory area from @src to @dest
  * for a total of @n bytes.
  *
- * Return: A pointer to the destination memory where data was copied.
+ * Return: A pointer to the destination memory with data copied for n bytes.
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
