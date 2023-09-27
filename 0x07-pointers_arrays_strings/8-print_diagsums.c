@@ -2,8 +2,7 @@
 #include <stdio.h>
 
 /**
-  * print_diagsums - Print the sum of 2 diagonals of a matrix. 
-  *
+  * print_diagsums - Print the sum of 2 diagonals of a matrix.
   * @a: Is the matrix.
   * @size: The size of a square matrix.
   *
