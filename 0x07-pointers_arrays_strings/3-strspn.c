@@ -1,10 +1,15 @@
 #include "main.h"
 
 /**
- * _strspn - gets the length of a prefix substring.
- * @s: initial segment.
- * @accept: accepted bytes.
- * Return: the number of accepted bytes.
+ * _strspn - Calculate the length of a prefix substring.
+ * @s: The initial segment to be analyzed.
+ * @accept: The set of accepted characters.
+ *
+ * Description: This function determines the length of the maximum prefix
+ * substring in @s that only contains characters found in the @accept set.
+ *
+ * Return: The number of characters in the prefix substring that are part
+ *         of the @accept set.
  */
 unsigned int _strspn(char *s, char *accept)
 {
