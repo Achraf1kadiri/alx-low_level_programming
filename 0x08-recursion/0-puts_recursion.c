@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _puts_recursion - Recursively prints a string.
  * @s: Argument of the function.
