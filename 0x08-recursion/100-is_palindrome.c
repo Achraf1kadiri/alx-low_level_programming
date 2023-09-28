@@ -28,7 +28,7 @@ int string_len_recursion(char *s)
 }
 
 /**
- * check_pal - Recursively checks if the string is a palindrome.
+ * checks_palindrome - Recursively checks if the string is a palindrome.
  * @s: Argument of the function.
  * @i: An iterator for traction.
  * @len: length of the string.
