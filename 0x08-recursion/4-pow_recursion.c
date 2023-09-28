@@ -2,7 +2,7 @@
 
 /**
  * _pow_recursion - Recursively calculates raising x to the power of y.
- * @x: The base to be raised 
+ * @x: The base to be raised. 
  * @y: The exponent power.
  * Return: The result of the mathematical operation.
  */
