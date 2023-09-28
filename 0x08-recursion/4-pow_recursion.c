@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _pow_recursion - Recursively calculates raising x to the power of y.
  * @x: The base to be raised. 
