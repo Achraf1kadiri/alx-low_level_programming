@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "main.h"
-
 /**
  * _atoi - Converting a string to an integer.
  * @s: Argument of the function.
@@ -30,8 +29,8 @@ int _atoi(char *s)
             foundDigit = s[index] - '0';
             if (sign % 2)
                 foundDigit = -foundDigit;
-            result = result * 10 + foundDigit;
-            sign = 1;
+            	result = result * 10 + foundDigit;
+            	sign = 1;
             if (s[index + 1] < '0' || s[index + 1] > '9')
                 break;
             sign = 0;
@@ -44,7 +43,6 @@ int _atoi(char *s)
 
     return (result);
 }
-
 /**
  * main - Program that multiplies 2 numbers.
  * @argc: Number of cmd-line arguments.
