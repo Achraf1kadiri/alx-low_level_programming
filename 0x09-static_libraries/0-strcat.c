@@ -3,7 +3,6 @@
  * _strcat - Combines 2 strings. 
  * @dest: Pointer to the destination string.
  * @src: Pointer to the source string to be combined.
- *
  * Return: A pointer to the dest string after the operation.
  */
 char *_strcat(char *dest, char *src)
