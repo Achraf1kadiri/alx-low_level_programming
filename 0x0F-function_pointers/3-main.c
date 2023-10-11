@@ -2,10 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "3-calc.h"
+
 /**
- * main – Program that performs simple math operations.
+ * main - Program that performs simple math operations.
  * @argc: The number of cmd-line arguments.
  * @argv: An array of strings.
+ *
  * Return: 0 on success.
  */
 int main(int __attribute__((__unused__)) argc, char *argv[])
@@ -29,8 +31,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 		exit(99);
 	}
 
-	if ((*op == '/' && num2 == 0) ||
-	    (*op == '%' && num2 == 0))
+	if ((*op == '/' && num2 == 0) || (*op == '%' && num2 == 0))
 	{
 		printf("Error\n");
 		exit(100);

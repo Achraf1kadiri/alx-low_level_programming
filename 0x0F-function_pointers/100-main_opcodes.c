@@ -2,11 +2,12 @@
 #include <stdlib.h>
 
 /**
- * main – A program that prints the opcodes of its own main  function.
+ * main - A program that prints the opcodes of its own main function.
  * @argc: Number of cmd-line arguments.
  * @argv: An array of strings.
+ *
  * Return: 0 on success.
- */
+ **/
 int main(int argc, char *argv[])
 {
 	int byt, i;
