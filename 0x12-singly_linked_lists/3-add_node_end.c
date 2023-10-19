@@ -1,10 +1,13 @@
 #include "lists.h"
+
 /**
- * add_node_end – A function that adds a new node at the end of a list.
+ * add_node_end - Adds a new node at the end of a list.
  * @head: A double pointer to the list.
  * @str: The new str to add to the node.
+ *
  * Return: Address of the new element, NULL if it fails.
- **/
+ * Description: This function adds a new node at the end of the list.
+ */
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *tmp1, *tmp2;
@@ -40,4 +43,3 @@ list_t *add_node_end(list_t **head, const char *str)
 	(*tmp2).next = tmp1;
 	return (tmp1);
 }
-

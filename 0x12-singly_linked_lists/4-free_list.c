@@ -1,7 +1,10 @@
 #include "lists.h"
+
 /**
- * free_list – A function that frees a linked list.
+ * free_list - Frees a linked list.
  * @head: A pointer to the list to be freed.
+ *
+ * Description: This function frees a linked list.
  */
 void free_list(list_t *head)
 {
@@ -15,4 +18,3 @@ void free_list(list_t *head)
 		head = t;
 	}
 }
-
