@@ -4,7 +4,7 @@
 
 /**
  * free_listint - A func that frees the list.
- * @head: A double pointer to the head of the list.
+ * @head: A pointer to the head of the list.
  **/
 
 void free_listint(listint_t *head)
