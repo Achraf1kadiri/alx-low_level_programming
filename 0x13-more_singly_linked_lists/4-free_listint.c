@@ -13,7 +13,9 @@ void free_listint(listint_t *head)
 	for (actual = head; actual != NULL;)
 	{
 		listint_t *temp = (*actual).next;
+
 		free(actual);
 		actual = temp;
 	}
 }
+
