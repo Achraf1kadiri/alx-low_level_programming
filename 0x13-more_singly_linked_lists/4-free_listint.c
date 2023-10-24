@@ -3,19 +3,18 @@
 #include <stdio.h>
 
 /**
- * free_listint - A func that frees the list.
+ * free_listint - A function that frees the list.
  * @head: A pointer to the head of the list.
  **/
 
 void free_listint(listint_t *head)
 {
-	listint_t *temp1, *temp2;
+	listint_t *actual;
 
-	temp1 = head;
-	while (!(temp1 = NULL))
+	for (actual = head; actual != NULL;)
 	{
-		temp2 = (*temp1).next;
-		free(temp1);
-		temp1 = temp2;
+		listint_t *temp = (*actual).next;
+		free(actual);
+		actual = temp;
 	}
 }
