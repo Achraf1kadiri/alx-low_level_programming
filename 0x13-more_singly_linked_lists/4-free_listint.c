@@ -6,7 +6,6 @@
  * free_listint - A function that frees the list.
  * @head: A pointer to the head of the list.
  **/
-
 void free_listint(listint_t *head)
 {
 	listint_t *actual;
